@@ -1,4 +1,5 @@
 package com.testproject.ps.domain;
+
 import javax.persistence.Column;
 
 import org.hibernate.annotations.Type;
@@ -11,16 +12,16 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooJpaActiveRecord
 public class SortableObject {
 
-    /**
-     * Current number
-     */
+	/**
+	 * Current number
+	 */
 	@Column
-    private Integer position;
+	private Integer position;
 
-    /**
-     * Text content
-     */
+	/**
+	 * Text content
+	 */
 	@Column
-	@Type(type="text")
-    private String content;
+	@Type(type = "text")
+	private String content = "";
 }
